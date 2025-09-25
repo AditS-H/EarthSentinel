@@ -1,0 +1,8 @@
+checkpoint_epoch_*.pth
+checkpoint_best.pth
+logs/
+wandb/
+__pycache__/
+images/
+*.log
+patch_chunks/
