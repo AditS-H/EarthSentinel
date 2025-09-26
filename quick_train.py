@@ -18,7 +18,7 @@ import time
 from tqdm import tqdm
 
 # ============== FAST DEVELOPMENT SETTINGS ==============
-FAST_MODE = True  # Set to False for full training
+FAST_MODE = False  # Set to False for full training
 QUICK_SAMPLE_SIZE = 1000  # Use only 1000 samples for quick testing
 QUICK_EPOCHS = 2
 QUICK_BATCH_SIZE = 8  # Reasonable batch size for memory
