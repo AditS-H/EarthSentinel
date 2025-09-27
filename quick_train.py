@@ -18,15 +18,15 @@ import time
 from tqdm import tqdm
 
 # ============== FAST DEVELOPMENT SETTINGS ==============
-FAST_MODE = False  # Set to False for full training
 QUICK_SAMPLE_SIZE = 1000  # Use only 1000 samples for quick testing
+FAST_MODE = False  # Set to False for full training
 QUICK_EPOCHS = 2
 QUICK_BATCH_SIZE = 8  # Reasonable batch size for memory
 CACHE_SAMPLES = False  # Disable caching to avoid memory issues
 MAX_MEMORY_GB = 4  # Maximum memory to use for caching
-
 # ---------------- Memory-Efficient Chunk Loader ----------------
 class FastChunkedPatchLoader:
+
     def __init__(self, chunk_dir, verbose=False, cache_limit=None):
         self.chunk_dir = chunk_dir
         self.verbose = verbose
